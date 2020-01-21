@@ -12,7 +12,7 @@ const isDevelopment = process.env.ENV === 'development';
 var cors = require('cors');
 const REDIS_URL = 'redis://redistogo:3a4edece180b255886a3813d062e9a6e@pike.redistogo.com:9862/';
 const DEFAULT_PORT = 3000;
-const ROOT_NODE_ADDRESS = `https://akshatdoshi.herokuapp.com/:${DEFAULT_PORT}`;
+const ROOT_NODE_ADDRESS = `https://akshatdoshi.herokuapp.com/`;
 
 const app = express();
 const blockchain = new Blockchain();
