@@ -10,7 +10,7 @@ const TransactionMiner = require('./app/transaction-miner');
 
 const isDevelopment = process.env.ENV === 'development';
 var cors = require('cors');
-const REDIS_URL = 'redis://redistogo:3a4edece180b255886a3813d062e9a6e@pike.redistogo.com:9862/';
+const REDIS_URL = 'redis://redis-14725.c93.us-east-1-3.ec2.cloud.redislabs.com:14725';
 const DEFAULT_PORT = 3000;
 const ROOT_NODE_ADDRESS = `https://akshatdoshi.herokuapp.com/`;
 
