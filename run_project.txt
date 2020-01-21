@@ -1,0 +1,26 @@
+redis-server = start redis server for p2p communication
+npm run dev = start localhost 3000
+npm run dev-peer = start peer servers
+
+now run test using api's on postman
+
+GET
+
+http://localhost:3000/api/wallet-info
+http://localhost:3000/api/blocks
+http://localhost:3000/api/mine-transactions
+http://localhost:3000/api/known-addresses
+http://localhost:3000/api/blocks/2
+
+POST
+
+http://localhost:3000/api/transact
+
+
+{
+	
+"amount": 100,
+	
+"recipient": "04e29a27d4e2c3427bef3d453af8334ad4f9adf66a32c85e1e1ec080376d465e1db7b5bbcb448c07109aa2b5726c61b58d967bc4a51518c4bf3d666b7a2164adb1"
+
+}
