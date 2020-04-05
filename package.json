@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll",
-    "start": "cross-env ENV='development' node index.js",
+    "start": "npm run build-client & node index.js",
     "dev": "cross-env ENV='development' nodemon index.js",
     "dev-peer": "cross-env GENERATE_PEER_PORT='true' ENV='development' nodemon index.js",
     "start-redis": "redis-server --daemonize yes",
@@ -25,24 +25,16 @@
     "nodemon": "^1.18.4"
   },
   "dependencies": {
-    "asymmetric-crypto": "^1.0.2",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "bigchaindb-driver": "^4.1.1",
     "body-parser": "^1.18.3",
-    "cors": "^2.8.5",
-    "cross-spawn": "^6.0.5",
-    "crypto": "^1.0.1",
-    "crypto2": "^2.0.0",
     "elliptic": "^6.4.1",
     "express": "^4.16.3",
     "hex-to-binary": "^1.0.1",
     "history": "^4.7.2",
-    "node-rsa": "^1.0.5",
-    "npm-proxy-cache": "^2.2.0",
     "parcel-bundler": "^1.10.3",
     "pubnub": "^4.21.6",
     "react": "^16.6.0",
@@ -51,10 +43,6 @@
     "react-router-dom": "^4.3.1",
     "redis": "^2.8.0",
     "request": "^2.88.0",
-    "request-promise": "^4.2.4",
-    "rm": "^0.1.8",
-    "sha256": "^0.2.0",
-    "uuid": "^3.3.2",
-    "webdriverio": "^5.10.9"
+    "uuid": "^3.3.2"
   }
 }
