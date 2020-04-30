@@ -11,7 +11,9 @@
     "start-redis": "redis-server --daemonize yes",
     "build-client": "npm run clean && parcel build client/src/index.html",
     "dev-client": "npm run clean && parcel client/src/index.html",
-    "clean": "rm -rf .cache client/dist"
+    "clean": "rm -rf .cache client/dist",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "jest": {
     "testEnvironment": "node"
@@ -43,6 +45,8 @@
     "react-router-dom": "^4.3.1",
     "redis": "^2.8.0",
     "request": "^2.88.0",
-    "uuid": "^3.3.2"
-  }
+    "uuid": "^3.3.2",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
